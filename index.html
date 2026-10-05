@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aqtar Shaik — Senior Performance Engineer specializing in performance engineering, API load testing, distributed systems, AWS, Kubernetes and observability.">
+  <title>Aqtar Shaik | Senior Performance Engineer</title>
+  <style>
+    :root{
+      --bg:#07111f; --panel:#0d1b2e; --panel2:#10243b; --text:#eaf2ff;
+      --muted:#9db0c8; --line:#203550; --accent:#54d6c7; --accent2:#7aa7ff;
+      --max:1120px; --shadow:0 20px 60px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 80% 10%,#123151 0,transparent 32%),var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:auto;padding:0 24px}
+    nav{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .navin{height:70px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+    .navlinks a:hover{color:var(--text)}
+    .hero{padding:105px 0 85px}
+    .eyebrow{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-.045em;max-width:900px}
+    .hero h1 span{color:var(--accent)}
+    .lead{max-width:780px;color:var(--muted);font-size:20px;margin:24px 0 30px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+    .btn.primary{background:var(--accent);color:#06151a;border-color:var(--accent)}
+    .btn:hover{transform:translateY(-1px)}
+    section{padding:80px 0;border-top:1px solid rgba(255,255,255,.06)}
+    .section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:34px}
+    .section-head h2{font-size:34px;letter-spacing:-.03em}
+    .section-head p{max-width:580px;color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:55px}
+    .stat,.card{background:linear-gradient(145deg,rgba(16,36,59,.92),rgba(10,25,42,.92));border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+    .stat{padding:22px}.stat strong{display:block;font-size:28px}.stat span{color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:24px}.card h3{font-size:18px;margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+    .tag{font-size:12px;color:#cfe0f7;border:1px solid #2a4565;border-radius:999px;padding:5px 9px;background:#0b1a2c}
+    .case{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .case .card{min-height:235px}
+    .metric{font-size:36px;font-weight:850;color:var(--accent);line-height:1.1;margin:8px 0}
+    .timeline{display:grid;gap:16px}
+    .role{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+    .role:last-child{border-bottom:0}
+    .date{color:var(--accent);font-weight:700;font-size:13px}.company{font-size:20px;font-weight:800}.title{color:var(--muted);margin:3px 0 10px}
+    ul{padding-left:20px;color:var(--muted)}li{margin:7px 0}
+    .process{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+    .step{padding:18px;border:1px solid var(--line);border-radius:14px;background:#0b192b}.step b{color:var(--accent);display:block;margin-bottom:6px}
+    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+    .contact .card{padding:30px}
+    .contactline{padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted)}.contactline:last-child{border-bottom:0}
+    footer{padding:35px 0;color:#71869f;font-size:13px}
+    @media(max-width:850px){.grid,.case,.contact{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.role{grid-template-columns:1fr}}
+    @media(max-width:600px){.navlinks{display:none}.hero{padding-top:75px}.grid,.case,.contact,.stats{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}h1{font-size:46px}.lead{font-size:17px}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap navin">
+    <a class="brand" href="#top">AQ<span>TAR</span></a>
+    <div class="navlinks">
+      <a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero wrap">
+    <div class="eyebrow">Senior Performance Engineer · Bengaluru, India</div>
+    <h1>Making distributed systems <span>prove</span> they can handle real traffic.</h1>
+    <p class="lead">Performance & automation test engineer with 11+ years in software testing and 10+ years focused on performance engineering, non-functional testing, API workloads, cloud platforms, observability and root-cause analysis.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View performance work</a>
+      <a class="btn" href="https://www.linkedin.com/in/aqtar-shaik-47070924/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:aqtar.sk@gmail.com">Email me</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>11+ yrs</strong><span>Software testing experience</span></div>
+      <div class="stat"><strong>10+ yrs</strong><span>Performance engineering</span></div>
+      <div class="stat"><strong>1M RPM</strong><span>High-volume workload model designed</span></div>
+      <div class="stat"><strong>AWS + K8s</strong><span>Cloud & distributed environments</span></div>
+    </div>
+  </header>
+
+  <section id="expertise">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Core expertise</h2>
+        <p>Built around the problems performance engineers actually need to solve: realistic workloads, trustworthy measurements, observability and actionable RCA.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Performance Engineering</h3><p>Load, stress, spike, soak, scalability, resilience, capacity and benchmark testing.</p><div class="tags"><span class="tag">Workload modelling</span><span class="tag">SLA/SLO</span><span class="tag">Capacity planning</span></div></article>
+        <article class="card"><h3>API & Distributed Systems</h3><p>REST/HTTP APIs, microservices, asynchronous processing, queues, caching and high-concurrency workloads.</p><div class="tags"><span class="tag">REST</span><span class="tag">Microservices</span><span class="tag">Concurrency</span></div></article>
+        <article class="card"><h3>Observability & RCA</h3><p>Correlating latency and throughput with CPU, memory, JVM/GC, database, cache and infrastructure signals.</p><div class="tags"><span class="tag">Grafana</span><span class="tag">Datadog</span><span class="tag">CloudWatch</span></div></article>
+        <article class="card"><h3>Load Generation</h3><p>Hands-on experience across JMeter, Gatling, LoadRunner, Locust and k6 for realistic performance scenarios.</p><div class="tags"><span class="tag">JMeter</span><span class="tag">Gatling</span><span class="tag">Locust</span><span class="tag">k6</span></div></article>
+        <article class="card"><h3>Cloud & Containers</h3><p>Performance testing of cloud-native applications with AWS, ECS/EKS, Kubernetes, Docker and RDS/MySQL.</p><div class="tags"><span class="tag">AWS</span><span class="tag">EKS</span><span class="tag">ECS</span><span class="tag">Docker</span></div></article>
+        <article class="card"><h3>CI/CD & Automation</h3><p>Integrating performance signal into engineering workflows and building reusable test assets.</p><div class="tags"><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">Argo</span><span class="tag">Python</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Selected performance work</h2>
+        <p>Representative examples from API, enterprise, banking, insurance and cloud-native workloads.</p>
+      </div>
+      <div class="case">
+        <article class="card">
+          <div class="eyebrow">High-volume API workload</div>
+          <div class="metric">1M RPM</div>
+          <h3>Production-like workload design</h3>
+          <p>Designed a workload model targeting 1 million requests per minute, with a 45-minute ramp-up followed by a 45-minute steady-state/study period. Unique member IDs were used to reduce cache effects and make the traffic more representative.</p>
+          <div class="tags"><span class="tag">Workload modelling</span><span class="tag">Volumetric testing</span><span class="tag">API performance</span></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Cloud-native performance</div>
+          <h3>Microservices bottleneck analysis</h3>
+          <p>Correlated latency, throughput and error-rate behaviour with CPU, memory, pod scaling, database connections and cache utilization using observability tooling to isolate application and infrastructure constraints.</p>
+          <div class="tags"><span class="tag">AWS ECS/EKS</span><span class="tag">Grafana</span><span class="tag">Datadog</span><span class="tag">Kubernetes</span></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Legion Technologies</div>
+          <h3>Workforce management performance</h3>
+          <p>Worked on performance scenarios for a workforce-management platform covering scheduling, forecasting, timesheets and reports/dashboards, with API-oriented workloads and cloud observability.</p>
+          <div class="tags"><span class="tag">Locust</span><span class="tag">Molotov</span><span class="tag">JMeter</span><span class="tag">AWS</span></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">BookMyShow</div>
+          <h3>High-scale consumer traffic</h3>
+          <p>Designed high-volume API performance workloads and incorporated k6 into the performance-engineering toolkit alongside established load-testing approaches.</p>
+          <div class="tags"><span class="tag">k6</span><span class="tag">API testing</span><span class="tag">Scalability</span></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Insurance · LoadRunner</div>
+          <h3>Aditya Birla Sun Life Insurance</h3>
+          <p>Developed performance scripts for four insurance products and executed 50–500 user workloads, preparing performance reports and analysing application behaviour.</p>
+          <div class="tags"><span class="tag">LoadRunner 12.57</span><span class="tag">AppDynamics</span></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Banking · JMeter</div>
+          <h3>Ingenium performance testing</h3>
+          <p>Created workload distributions and executed 300 concurrent users across 20+ screens, analysing response times and database deadlocks.</p>
+          <div class="tags"><span class="tag">JMeter</span><span class="tag">JVisualVM</span><span class="tag">Dynatrace</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Performance engineering approach</h2>
+        <p>The goal is not simply to generate load. The goal is to produce evidence that explains system behaviour and guides engineering decisions.</p>
+      </div>
+      <div class="process">
+        <div class="step"><b>01 · Model</b>Define business transactions, workload mix, concurrency, arrival rate and test data.</div>
+        <div class="step"><b>02 · Baseline</b>Establish response-time, throughput, error-rate and resource baselines.</div>
+        <div class="step"><b>03 · Execute</b>Run controlled load, stress, spike, endurance and scalability scenarios.</div>
+        <div class="step"><b>04 · Correlate</b>Connect test results with application, JVM, database, network and infrastructure signals.</div>
+        <div class="step"><b>05 · Improve</b>Identify bottlenecks, validate fixes and communicate release-readiness risks.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Performance-focused delivery across cloud-native, banking, insurance, payments and enterprise applications.</p>
+      </div>
+      <div class="timeline">
+        <div class="role"><div class="date">Recent</div><div><div class="company">Legion Technologies</div><div class="title">Senior Performance SDET</div><ul><li>Performance engineering for a cloud-hosted workforce management platform.</li><li>API workload modelling, Locust/Molotov/JMeter scripting, token/session handling and observability-driven analysis.</li><li>Collaborated with backend, DevOps and SRE teams on scaling, JVM and database performance.</li></ul></div></div>
+        <div class="role"><div class="date">Earlier</div><div><div class="company">BookMyShow</div><div class="title">Performance / SDET work</div><ul><li>High-volume API performance engineering and production-like workload design.</li><li>Used performance metrics and infrastructure telemetry to assess scalability and release readiness.</li><li>Added k6 to the performance-testing toolkit.</li></ul></div></div>
+        <div class="role"><div class="date">Dec 2020 – Nov 2021</div><div><div class="company">Indium Software</div><div class="title">Software Test Engineer</div><ul><li>Functional and API testing with Agile release validation and defect analysis.</li></ul></div></div>
+        <div class="role"><div class="date">Mar 2020 – Nov 2020</div><div><div class="company">Travelex India · GFX</div><div class="title">Senior Software Test Engineer / Lead Analyst</div><ul><li>Partner-facing APIs supporting cash-to-branch and cash-to-home journeys, pricing and currency-rate services.</li><li>Developed acceptance scenarios, step definitions and JSON test data.</li></ul></div></div>
+        <div class="role"><div class="date">Dec 2016 – Feb 2020</div><div><div class="company">AQM Technologies</div><div class="title">Senior Software Test Engineer / Project Lead</div><ul><li>Led performance and non-functional testing across banking and insurance applications.</li><li>Created workload models, developed scripts, executed tests and analysed application, database and infrastructure metrics.</li><li>Used LoadRunner/JMeter with AppDynamics and Dynatrace for bottleneck analysis and RCA.</li></ul></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Let's talk performance</h2>
+        <p>Open to Senior Performance Engineer, Performance Test Engineer, Performance Testing Lead and Performance SDET opportunities.</p>
+      </div>
+      <div class="contact">
+        <div class="card">
+          <h3>Contact</h3>
+          <div class="contactline"><strong>Email</strong><br><a href="mailto:aqtar.sk@gmail.com">aqtar.sk@gmail.com</a></div>
+          <div class="contactline"><strong>Phone</strong><br>+91 9321094814</div>
+          <div class="contactline"><strong>Location</strong><br>Bengaluru, India</div>
+          <div class="contactline"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/aqtar-shaik-47070924/" target="_blank" rel="noopener">linkedin.com/in/aqtar-shaik-47070924</a></div>
+        </div>
+        <div class="card">
+          <h3>Technical toolkit</h3>
+          <div class="tags">
+            <span class="tag">JMeter</span><span class="tag">Gatling</span><span class="tag">LoadRunner</span><span class="tag">Locust</span><span class="tag">k6</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">Scala</span><span class="tag">AWS</span><span class="tag">ECS/EKS</span><span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">Grafana</span><span class="tag">Datadog</span><span class="tag">CloudWatch</span><span class="tag">Dynatrace</span><span class="tag">AppDynamics</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">SQL</span><span class="tag">REST APIs</span><span class="tag">Microservices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Aqtar Shaik · Performance Engineering Portfolio</div>
+</footer>
+</body>
+</html>
